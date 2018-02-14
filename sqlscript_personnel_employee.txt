@@ -1,0 +1,15 @@
+/* Author @Clark Jason Ngo */
+
+CREATE TABLE `employee` (
+  `employeeID` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(15) DEFAULT NULL,
+  `lastName` varchar(15) DEFAULT NULL,
+  `homeAddress` varchar(15) DEFAULT NULL,
+  `workPhoneNumber` varchar(10) DEFAULT NULL,
+  `departmentID` int(11) NOT NULL,
+  PRIMARY KEY (`employeeID`,`departmentID`),
+  KEY `departmentID_idx` (`departmentID`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `employee` VALUES (1,'Nobuo','Uematsu','Shibuya','8349847210',10),(2,'Hans','Zimmer','Maximilianstra','3849127491',10),(3,'Ennio','Morricone','Via Del Corso','1829410001',10),(4,'Hitoshi','Sakimoto','Ginza','7678482921',10),(5,'Gary','Vaynerchuk','Wall Street','4801247582',4),(6,'Steve','Jobs','Waverley','4748289991',4),(7,'Shigeru','Minamoto','Kuramae','6478289219',2),(8,'Hideo','Kojima','Harajuku','1128839921',2),(9,'Hironobu','Sakaguchi','Asakusa','9203819414',2),(10,'Masashi','Kishimoto','Koenji','6729129621',3),(11,'Akira','Toriyama','Kichijoji','5391239842',3),(12,'Nobuhiro','Watsuki','Daikanyama','2859537691',3),(13,'Yoshitaka','Amano','Aoyama','1004928511',3),(14,'Cem','Kaner','Rivadavia','9099758372',9),(15,'Jack','Welch','Calle Ocho','7589598383',7),(16,'Elon','Musk','Bel Air','8588583931',11),(17,'Clark','Ngo','8th','5783921913',5),(18,'Warren','Buffett','2nd Ave','8579320122',6),(19,'Colin','James','3rd Ave','8285884122',8),(20,'Steven','Spielberg','100 Rd','1002893672',5),(21,'Jeff','Bezos','Battery','4777778881',1),(22,'Jack','Ma','Jilin','6696636612',1),(23,'Richard','Gary','17th','1119992223',5),(24,'Ken','Sugimori','Tokyo Street','9444762831',3),(25,'Bill','Gates','24th','5737589313',1),(26,'Koji','Kondo','Meiji Dori','5737589313',10),(27,'Mark','Zuckerberg','80th','7658352624',1),(28,'Mark','Cuban','112th','6531231232',1),(29,'Tim','Cook','22th','6647829121',1),(30,'Michael','Bloomberg','62th','6464646464',1);

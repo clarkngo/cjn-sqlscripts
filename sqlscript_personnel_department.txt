@@ -1,0 +1,8 @@
+CREATE TABLE `department` (
+  `departmentID` int(11) NOT NULL AUTO_INCREMENT,
+  `departmentName` varchar(15) DEFAULT NULL,
+  `location` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`departmentID`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+
+INSERT INTO `department` VALUES (1,'IT','B1'),(2,'Game Design','1A'),(3,'Art','1B'),(4,'Marketing','2A'),(5,'Technical','3A'),(6,'Finance','2B'),(7,'Human Resources','2C'),(8,'Facilities','2D'),(9,'QA','3B'),(10,'Sound Design','4A'),(11,'Research','5A');
